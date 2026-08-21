@@ -1,0 +1,37 @@
+# ---- Keil MDK-ARM：只保留工程定义文件，忽略编译产物与用户配置 ----
+MDK-ARM/*
+!MDK-ARM/*.uvprojx
+!MDK-ARM/startup_*.s
+
+# ---- 编译产物（防御：从原工程拷文件或本地重新编译时兜底）----
+Objects/
+Listings/
+DebugConfig/
+RTE/
+*.o
+*.axf
+*.hex
+*.map
+*.lst
+*.lnp
+*.dep
+*.crf
+*.d
+*.scvd
+*.uvgui.*
+*.uvoptx
+*.iex
+*.bak
+
+# ---- Python ----
+__pycache__/
+*.pyc
+
+# ---- IDE / 编辑器 ----
+.vscode/
+.idea/
+*.suo
+
+# ---- 面试资料爬取临时文件（绝不上传）----
+.tmp_mianjing/
+.tmp_nowcoder_search.png
